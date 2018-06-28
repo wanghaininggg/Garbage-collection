@@ -1,0 +1,26 @@
+/* index/index.wxss */
+.remind-box {
+  flex: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 220rpx;
+}
+.remind-img {
+  width: 250rpx;
+  height: 250rpx;
+  padding-bottom: 25rpx;
+}
+.remind-text {
+  font-size: 12pt;
+  line-height: 150%;
+}
+button::after{
+border: none;
+}
+.button_img{
+  width: 200rpx;
+  height: 200rpx;
+}
+

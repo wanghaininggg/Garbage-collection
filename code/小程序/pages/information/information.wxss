@@ -1,0 +1,118 @@
+/* pages/information/information.wxss */
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+    color: white;
+}
+.weui-bar__item_on{
+  border: 1px solid #7acfa6;
+}
+.weui-tab__content{
+    padding-top: 20rpx;
+    text-align: center;
+}
+.list_history{
+  height: 150rpx;
+  background-color: #7acfa6;
+  color: white;
+  display: flex;
+  margin: 15rpx;
+  align-items: center;
+}
+.odd{
+  background-color: #CCCCCC;
+}
+.list_history_left{
+  display: flex;
+  flex-grow: 1;
+  justify-content: center; 
+}
+.list_history_middle{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  min-height: 150rpx;
+  justify-content: center;
+}
+.list_history_middle_top{
+  display: flex;
+  justify-content: center;
+}
+.list_history_middle-bottom{
+  display: flex;
+  justify-content: center;
+}
+.list_history-right{
+   display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  font-size: 2em;
+}
+
+.rank-list{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.rank-info{
+  display: flex;
+  background-color: #fff;
+  height: 150rpx;
+  border-bottom: 1px solid 	#E0EEE0;
+  align-items: center;
+  font-size:12pt;
+}
+.Champion .rank-info{
+  background-color: #7acfa6;
+}
+.rank-info-index{
+  display: flex;
+  color: #D4D4D4;
+  flex-grow: 1;
+}
+.Champion .rank-info .rank-info-index{
+  color: white;
+}
+.rank-info-detail{
+  display: flex;
+  color: #919191;
+  flex-grow: 1;
+}
+.Champion .rank-info .rank-info-detail{
+  color: white;
+}
+.rank-info-credit{
+  color: #90EE90;
+  font-size: 1.5em;
+  flex-grow: 4;
+}
+.Champion .rank-info .rank-info-credit{
+  color: white;
+}
+.img-champion{
+  width: 85rpx;
+  height: 85rpx; 
+}
+
+/* 未连接提醒样式 */
+.remind-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 300rpx;
+  margin-top: 100rpx;
+}
+.remind-img {
+  width: 250rpx;
+  height: 250rpx;
+  display: flex;
+  flex-grow: 1;
+}
+.remind-text {
+  font-size: 12pt;
+  line-height: 150%;
+}

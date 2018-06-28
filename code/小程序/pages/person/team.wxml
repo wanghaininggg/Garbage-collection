@@ -1,0 +1,149 @@
+<!--pages/person/team.wxml-->
+
+<!--about.wxml-->
+<view class="container">
+  <view class="header">
+    <image class="title" src="../../style/images/person/school.png"></image>
+  </view>
+  <view class="content">
+    <view class="version">
+      <view class="version-title">
+        <text class="title-name">师大易回收</text>
+        <text class="version-text">v0.6.0</text>
+        <text class="version-text">内测</text>
+      </view>
+      <view bindtap="toggleLog">
+        <text class="version-log-link" wx:if="{{!showLog}}">团队介绍</text> 
+        <text class="version-log-link" wx:else>公司介绍</text> 
+      </view>
+    </view>
+    <view class="describe" wx:if="{{!showLog}}">
+        <text class="desc-title">简介</text>
+        <view class="desc-list">
+          <text class="desc-list-item">官网：</text>
+        </view>
+        <text class="desc-content">春霜科技的废旧物品回收系统，以节约资源、保护环境为目的，以此来加强校园公共废旧物品回收利用工作。目前主要服务对象是云南师范大学（后期根据需要会拓展到更多学校），通过对废旧资源的回收，发挥和带动全社会节约资源、保护环境的示范作用，促进节约型社会建设以及经济的循环发展。</text>
+    </view>
+    <view class="log-list" wx:else>
+      <view class="describe">
+          <view class="desc-title">
+            <text class="desc-v">刘波</text>
+            <text class="desc-time">2018.5.13</text>
+          </view>
+          <text class="desc-content">具有团队较强管理能力、执行力强。研究图像识别算法。</text>
+          <view class="desc-list">
+            <text class="desc-list-item">团队管理</text>
+            <text class="desc-list-item">整体设计</text>
+            <text class="desc-list-item">图像处理算法</text>
+          </view>
+      </view>
+
+      <view class="describe">
+          <view class="desc-title">
+            <text class="desc-v">王海宁</text>
+            <text class="desc-time">2018.5.13</text>
+          </view>
+          <text class="desc-content">熟悉多种编程语言，并能利用多种技能独立完成产品。</text>
+          <view class="desc-list">
+            <text class="desc-list-item">服务器构建</text>
+            <text class="desc-list-item">前端设计实现</text>
+            <text class="desc-list-item">数据库实现</text>
+            <text class="desc-list-item">系统测试</text>
+          </view>
+      </view>
+
+      <view class="describe">
+          <view class="desc-title">
+            <text class="desc-v">李秋墺</text>
+            <text class="desc-time">2018.5.13</text>
+          </view>
+          <text class="desc-content">熟练使用c++等编程语言。</text>
+          <view class="desc-list">
+            <text class="desc-list-item">前端实现</text>
+            <text class="desc-list-item">数据库设计</text>
+          </view>
+      </view>
+
+           <view class="describe">
+          <view class="desc-title">
+            <text class="desc-v">雷秦川</text>
+            <text class="desc-time">口才好，人际交往能力强。</text>
+          </view>
+          <text class="desc-content">个人介绍</text>
+          <view class="desc-list">
+            <text class="desc-list-item">项目推广</text>
+            <text class="desc-list-item">业务开发</text>
+          </view>
+      </view>
+
+
+      <view class="describe">
+        <view class="desc-title">
+          <text class="desc-v">王点</text>
+          <text class="desc-time">2018.5.13</text>
+        </view>
+        <text class="desc-content">擅长文字编辑，很熟悉word、ppt等软件。</text>
+        <view class="desc-list">
+          <text class="desc-list-item">文档编写</text>
+          <text class="desc-list-item">内部测试</text>
+        </view>
+      </view>
+
+       <view class="describe">
+        <view class="desc-title">
+          <text class="desc-v">郝董景</text>
+          <text class="desc-time">2018.5.13</text>
+        </view>
+        <text class="desc-content">对于内测很熟悉，能很快找出不足。</text>
+        <view class="desc-list">
+          <text class="desc-list-item">文档编写</text>
+          <text class="desc-list-item">内部测试</text>
+        </view>
+      </view>
+
+        <view class="describe">
+        <view class="desc-title">
+          <text class="desc-v">付月媚</text>
+          <text class="desc-time">2018.5.13</text>
+        </view>
+        <text class="desc-content">有很强的沟通和表达能力，并且做事认真负责有耐心。</text>
+        <view class="desc-list">
+          <text class="desc-list-item">用户调查</text>
+          <text class="desc-list-item">需求分析</text>
+        </view>
+      </view>
+
+        <view class="describe">
+        <view class="desc-title">
+          <text class="desc-v">钱晓如</text>
+          <text class="desc-time">2018.5.13</text>
+        </view>
+        <text class="desc-content">整理归纳资料的能力很强，是小组作业的核心力量。</text>
+        <view class="desc-list">
+          <text class="desc-list-item">文档编写</text>
+          <text class="desc-list-item">内部测试</text>
+        </view>
+      </view>
+
+        <view class="describe">
+        <view class="desc-title">
+          <text class="desc-v">张国丽</text>
+          <text class="desc-time">2018.5.13</text>
+        </view>
+        <text class="desc-content">熟悉需求分析的流程，能持之以恒的把这份困难的工作做好。</text>
+        <view class="desc-list">
+          <text class="desc-list-item">用户调查</text>
+          <text class="desc-list-item">需求分析</text>
+        </view>
+      </view>
+
+
+    </view>
+  </view>
+  <view class="footer">
+    <view class="footer-lanshan">
+    </view>
+    <text>春霜科技有限公司</text>
+  </view>
+</view>
+

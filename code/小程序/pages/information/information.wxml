@@ -1,0 +1,114 @@
+<!--pages/information/information.wxml-->
+<view class="container">
+<view class="weui-navbar">
+  <block wx:for="{{tabs}}" wx:key="*this">
+    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+      <view class="weui-navbar__title">{{item}}</view>
+    </view>
+   </block>
+  <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+  </view>
+  <view class="weui-tab__panel">
+    <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+    
+      <block wx:if="{{ user.is_bind }}">
+        <view wx:for="{{ information }}" wx:for-index="index" wx: for-item="item">
+          <view wx:if="{{ index % 2 == 0}}">
+            <view class='list_history'>
+              <view class='list_history_left'>{{ index+1 }}</view>            
+              <view class='list_history_middle'>
+                <view class='list_history_middle_top'>
+                  {{item.site__location}} {{ item.site__recType__desc }}
+                </view>
+                <view class='list_history_middle-bottom'>
+                  {{item.time}}
+                </view>
+              </view>
+              <view class='list_history-right'>
+                {{item.qty}}
+              </view> 
+            </view>
+          </view>
+           <view wx:else>
+                <view class='list_history odd'>
+              <view class='list_history_left'>{{ index+1 }}</view>            
+              <view class='list_history_middle'>
+                <view class='list_history_middle_top'>
+                  {{item.site__location}} {{ item.site__recType__desc }}
+                </view>
+                <view class='list_history_middle-bottom'>
+                  {{item.time}}
+                </view>
+              </view>
+              <view class='list_history-right'>
+                {{item.qty}}
+              </view> 
+            </view>
+          </view> 
+        </view>
+      </block>
+
+      <block wx:else>
+        <view class='remind-box'>
+          <image class="remind-img" src="../../style/images/information/nothing.png"></image>
+            <text class="remind-text">未绑定</text>
+        </view>
+      </block>
+     </view>
+
+   <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+      <view wx:for="{{ rank }}" wx:for-index="index" wx: for-item="item">
+          <view wx:if="{{ index == 0}}">
+            <view wx:if="{{ user.we.number == item.number}}">
+              <view class='rank-list Champion'> 
+              <view class='rank-info'>
+                <image class="img-champion" src="../../style/images/information/champion.png"></image>
+                <view class='rank-info-index'>{{ index+1 }}</view>
+                <view class='rank-info-detail'>{{ item.number }}</view>  
+                <view class='rank-info-detail'>{{ item.name }}</view>
+                <view class='rank-info-credit'>{{ item.donate }}</view>
+              </view>
+              </view>
+            </view>
+            <view wx:else>
+              <view class='rank-list'> 
+                <view class='rank-info'>
+                 <image class="img-champion" src="../../style/images/information/champion.png"></image>
+                  <view class='rank-info-index'>{{ index+1 }}</view>
+                  <view class='rank-info-detail'>{{ item.number}}</view>  
+                  <view class='rank-info-detail'>{{ item.name }}</view>
+                  <view class='rank-info-credit'>{{ item.donate }}</view>
+                </view>
+              </view>
+            </view>
+        
+          </view>
+          <view wx:else>
+            <view wx:if="{{ user.we.number == item.number }}">
+              <view class='rank-list Champion'>
+                <view class='rank-info'>
+                  <image class="img-champion"></image>
+                  <view class='rank-info-index'>{{ index+1 }}</view>
+                  <view class='rank-info-detail'>{{ item.number}}</view>  
+                  <view class='rank-info-detail'>{{ item.name }}</view>
+                  <view class='rank-info-credit'>{{ item.donate }}</view>
+                </view>
+              </view>
+            </view>
+            <view wx:else>
+              <view class='rank-list'>
+                <view class='rank-info'>
+                  <image class="img-champion"></image>
+                  <view class='rank-info-index'>{{ index+1 }}</view>
+                  <view class='rank-info-detail'>{{ item.number}}</view>  
+                  <view class='rank-info-detail'>{{ item.name }}</view>
+                  <view class='rank-info-credit'>{{ item.donate }}</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        
+      </view>
+   </view>
+</view>
+ </view>

@@ -1,0 +1,33 @@
+<!--pages/person/login.wxml-->
+<view class="container">
+  <view class="remind-box" wx:if="{{remind}}">
+    <image class="remind-img" src="../../style/images/person/loading.gif"></image>
+  </view>
+  <block wx:else>
+       <image class="title" src="../../style/images/person/title.png"></image>
+         <view class="content">
+      <view class="hd" style="transform:rotateZ({{angle}}deg);">
+          <image class="logo" src="../../style/images/person/logo.png"></image>
+          <image class="wave" src="../../style/images/person/wave.png" mode="aspectFill"></image>
+          <image class="wave wave-bg" src="../../style/images/person/wave.png" mode="aspectFill"></image>
+      </view>
+      <view class="bd">
+        <form class="login-form">
+          <view class="input-group {{userid_focus ? 'active' : ''}}">
+            <text class="input-label">帐号</text>
+            <input type="number" id="userid" maxlength="10" placeholder="请输入学号" bindinput="useridInput" bindfocus="inputFocus" bindblur="inputBlur" />
+          </view>             
+          <view class="input-group {{passwd_focus ? 'active' : ''}}">
+            <text class="input-label">密码</text>
+            <input password="true" id="passwd" placeholder="初始密码为000000" bindinput="passwdInput" bindfocus="inputFocus" bindblur="inputBlur" />
+          </view>
+        </form>
+        <view class="confirm-btn" bindtap="bind">
+            <text>确认绑定</text>
+        </view>
+      </view>
+    </view>
+  
+  </block>
+
+</view>

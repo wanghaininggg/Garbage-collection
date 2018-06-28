@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/person/person",
+    "pages/information/information",
+    "pages/person/login",
+    "pages/person/team",
+    "pages/person/donate",
+    "pages/person/success",
+    "pages/index/recoverySuccess",
+    "pages/index/recoveryFail",
+    "pages/index/feedback"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#7acfa6",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "师大益回收",
+    "backgroundColor": "#7acfa6",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "style/images/index/index.png",
+        "selectedIconPath": "style/images/index/index@active.png"
+      },
+      {
+        "pagePath": "pages/information/information",
+        "text": "记录",
+        "iconPath": "style/images/index/more.png",
+        "selectedIconPath": "style/images/index/more@active.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "个人",
+        "iconPath": "style/images/index/news.png",
+        "selectedIconPath": "style/images/index/news@active.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "debug": true
+}

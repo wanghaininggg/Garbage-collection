@@ -1,0 +1,14 @@
+<!--index/index.wxml-->
+<view class='container'>
+  <block wx:if="{{ user.is_bind }}">
+    <button bindtap='use' class='remind-box button-tap'> 
+      <image class="button_img" src='../../style/images/index/tree.png'></image>
+    </button>
+  </block>
+  <block wx:else>
+    <view class='remind-box'>
+      <image class="remind-img" src="../../style/images/information/nothing.png"></image>
+      <text class="remind-text">请绑定后使用</text>
+    </view>
+  </block>
+</view>

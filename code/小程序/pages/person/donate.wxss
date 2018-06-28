@@ -1,0 +1,25 @@
+/* pages/person/donate.wxss */
+  .top-title{
+    margin-top: 20rpx;
+     font-size: 15pt;
+     color: #FFAEB9;
+     width: 100%;
+     text-align: center;
+  }
+  .top-title-num{
+    color: #FF0000;
+    display: inline-block;
+  }
+  .img{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100rpx;
+  margin-bottom: 100rpx;
+  }
+  .title-img{
+    width: 128px;
+    height: 128px;
+  }
